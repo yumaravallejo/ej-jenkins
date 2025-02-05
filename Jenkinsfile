@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
 		echo 'Desploying...'
-		sh 'cp ./build/* /var/www/html/public/'    
+		sh 'cp -r ./build/* /var/www/html/'    
 	    }
         }
     }
